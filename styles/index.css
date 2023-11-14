@@ -142,6 +142,7 @@ body {
 
   p {
     font-family: Montserrat, Arial, sans-serif;
+    color: #fff;
     font-weight: 100;
     margin-left: 16px;
     margin-top: 0px;
@@ -208,6 +209,7 @@ body {
 
   .proyecto h3 {
     text-align: left;
+    color: #fff;
     margin: 10px 16px;
     font-size: 18px;
     font-weight: 800;
