@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 05</title>
+    <title>Ejercicio 06</title>
 
     <style>
         body {
@@ -13,6 +13,7 @@
         form {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         fieldset {
@@ -26,16 +27,28 @@
             font-size: 20px;
         }
 
-        select, input[type="checkbox"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="date"], textarea {
+        select, input, textarea {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
             margin-bottom: 10px;
         }
 
-        button {
-            margin-top: 20px;
-            padding: 10px;
+        .boton {
+            width: 100%;
+        }
+
+        .pro {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px;
+            gap: 5px;
+        }
+
+        .pro input {
+            width: unset;
+            padding: unset;
+            margin-bottom: unset;
         }
 
     </style>
@@ -45,7 +58,7 @@
   <body>
     <h1>Registro</h1>
 
-    <form id="registro" action="/procesar_registro" method="get">
+    <form action="/procesar_registro" method="get">
 
       <!-- Datos Personales -->
       <fieldset style="margin-left: 20px; width: 300px;">
@@ -53,7 +66,7 @@
 
         <!-- Nombre Completo -->
         <label for="nombre">Nombre y Apellidos:</label>
-        <input type="text" id="nombre" name="nombre-completo" placeholder="Ramón Vázquez" required/><br><br>
+        <input type="text" id="nombre" name="nombre-completo" placeholder="Ramón Vázquez" minlength="2" required/><br><br>
 
         <!-- Correo -->
         <label for="email">Email:</label>
@@ -64,12 +77,12 @@
         <input type="date" id="fecha" name="fecha-nacimiento" required/><br /><br />
 
         <!-- Número de Teléfono -->
-        <label for="movil">Número de Teléfono:</label>
-        <input type="tel" id="movil" name="tel-numero" placeholder="123 456 789" required/><br><br>
+        <label for="phone-mask">Número de Teléfono:</label>
+        <input id="phone-mask" name="tel-numero" placeholder="123 456 789" required/><br><br>
 
         <!-- Contraseña -->
         <label for="clave">Contraseña:</label>
-        <input type="password" id="clave" name="contrasena" required/><br /><br />
+        <input type="password" id="clave" name="contrasena" min="5" required/><br /><br />
 
       </fieldset>
 
@@ -88,21 +101,22 @@
         </select>
         
         <!-- Checkbox para el Plan Pro -->
-        <input type="checkbox" id="proPlan" name="proPlan" style="display: inline-block;" />
-        <label for="proPlan" id="proPlanLabel" style="display: inline-block;">Plan Pro</label><br>
+        <div class="pro">
+            <input type="checkbox" id="proPlan" name="proPlan" />
+            <label for="proPlan" id="proPlanLabel">Plan Pro</label><br>
+        </div>
 
         <!-- Número de Tarjeta de Crédito -->
-        <label for="creditCard">Número de Tarjeta de Crédito:</label>
-        <input type="text" id="creditCard" name="creditCard" placeholder="1234 5678 9012 3456" required />
+        <label for="card-mask">Número de Tarjeta de Crédito:</label>
+        <input id="card-mask" name="creditCard" placeholder="1234 5678 9012 3456" required />
             
-
         <!-- CVC -->
-        <label for="cvc">CVC:</label>
-        <input type="text" id="cvc" name="cvc" placeholder="123" required /><br><br>
+        <label for="CVC-mask">CVC:</label>
+        <input id="CVC-mask" name="cvc" placeholder="123" required /><br><br>
 
         <!-- Fecha de Expiración -->
-        <label for="expirationDate">Fecha de Expiración:</label>
-        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/AA" required /><br><br>
+        <label for="date-mask">Fecha de Expiración:</label>
+        <input id="date-mask" name="expirationDate" placeholder="MM/AA" required /><br><br>
 
         <!-- Dirección de Facturación -->
         <label for="direccion">Dirección de Facturación:</label>
@@ -110,8 +124,43 @@
       </fieldset>
       
       <!-- Botón de Envío -->
+      <div class="boton">
       <button type="submit" style="margin-left: 20px; padding: 10px;">Registrarse</button>
+      </div>
 
     </form>
+    <script src="https://unpkg.com/imask"></script>
+
+    <script>
+        IMask(
+            document.getElementById('phone-mask'),
+            {
+                mask: '+{34} 000 000 000'
+            }
+            )
+
+            IMask(
+            document.getElementById('date-mask'),
+            {
+                mask: '00/00'
+            }
+            )
+
+            IMask(
+            document.getElementById('CVC-mask'),
+            {
+                mask: '000'
+            }
+            )
+
+            IMask(
+            document.getElementById('card-mask'),
+            {
+                mask: '0000 0000 0000 0000'
+            }
+            )
+
+    </script>
+
   </body>
 </html>
