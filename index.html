@@ -26,7 +26,7 @@
             font-size: 20px;
         }
 
-        select, input[type="checkbox"], input[type="text"], input[type="password"], input[type="date"], textarea {
+        select, input[type="checkbox"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="date"], textarea {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
@@ -38,23 +38,14 @@
             padding: 10px;
         }
 
-        input[type="checkbox"] {
-            margin-top: 5px;
-        }
-
-        label[for="proPlan"] {
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: 5px;
-        }
-      </style>
+    </style>
 
   </head>
 
   <body>
     <h1>Registro</h1>
 
-    <form action="/procesar_registro" method="get">
+    <form id="registro" action="/procesar_registro" method="get">
 
       <!-- Datos Personales -->
       <fieldset style="margin-left: 20px; width: 300px;">
@@ -70,8 +61,7 @@
 
         <!-- Fecha de Nacimiento -->
         <label for="fecha">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha" name="fecha-nacimiento" required
-        /><br /><br />
+        <input type="date" id="fecha" name="fecha-nacimiento" required/><br /><br />
 
         <!-- Número de Teléfono -->
         <label for="movil">Número de Teléfono:</label>
@@ -79,11 +69,9 @@
 
         <!-- Contraseña -->
         <label for="clave">Contraseña:</label>
-        <input type="password" id="clave" name="contrasena" required
-        /><br /><br />
+        <input type="password" id="clave" name="contrasena" required/><br /><br />
 
       </fieldset>
-
 
       <!-- Métodos de Pago -->
       <fieldset style="margin-right: 700px; width: 400px;">
@@ -92,16 +80,16 @@
         <!-- Selección de Planes -->
         <label for="planes">Selecciona un plan:</label>
         <select id="planes" name="plans" required>
+            <option value="default">---selecciona---</option>
             <option value="gratis">Plan Gratuito</option>
             <option value="plan1">Plan 1 - Precio 20€</option>
             <option value="plan2">Plan 2 - Precio 40€</option>
             <option value="plan3">Plan 3 - Precio 60€</option>
         </select>
         
-
         <!-- Checkbox para el Plan Pro -->
-        <input type="checkbox" id="proPlan" name="proPlan" />
-        <label for="proPlan">Plan Pro</label><br>
+        <input type="checkbox" id="proPlan" name="proPlan" style="display: inline-block;" />
+        <label for="proPlan" id="proPlanLabel" style="display: inline-block;">Plan Pro</label><br>
 
         <!-- Número de Tarjeta de Crédito -->
         <label for="creditCard">Número de Tarjeta de Crédito:</label>
@@ -110,31 +98,20 @@
 
         <!-- CVC -->
         <label for="cvc">CVC:</label>
-        <input type="text" id="cvc" name="cvc" placeholder="123" required /><br /><br />
+        <input type="text" id="cvc" name="cvc" placeholder="123" required /><br><br>
 
         <!-- Fecha de Expiración -->
         <label for="expirationDate">Fecha de Expiración:</label>
-        <input
-          type="text"
-          id="expirationDate"
-          name="expirationDate"
-          placeholder="MM/AA"
-          required
-        /><br /><br />
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/AA" required /><br><br>
 
         <!-- Dirección de Facturación -->
         <label for="direccion">Dirección de Facturación:</label>
-        <textarea
-          id="direccion"
-          name="direccion-pago"
-          rows="1"
-          column="5"
-          required
-        ></textarea>
+        <textarea id="direccion" name="direccion-pago" rows="1" column="5" placeholder="Wallaby Way, 42 - Sydney" required></textarea>
       </fieldset>
-    </form>
-    
+      
       <!-- Botón de Envío -->
       <button type="submit" style="margin-left: 20px; padding: 10px;">Registrarse</button>
+
+    </form>
   </body>
 </html>
