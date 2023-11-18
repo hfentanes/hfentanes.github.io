@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 09</title>
+
+    <!-- Estilos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        article {
+            padding: 20px;
+            background-color: #fff;
+            color: #333;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        article h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input[type="email"] {
+            width: 900px;
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            width: 900px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .images img {
+            width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Open Beta Available Now for All Palians on PC!</h1>
+    </header>
+
+    <!-- Materia -->
+    <article class="images">
+
+        <section>
+            <img src="./src/image01.jpg" alt="Image 1">
+            <h2>The wait is over!</h2>
+            <p>After five years of development, a handful of Alpha tests, several stress tests, and loads of excellent feedback from our amazing community; Palia is available now in PC Open Beta for every player that wants to pioneer the world of Palia (and without any more planned progress resets!).</p>
+
+            <p>Before you start exploring the lush landscape of Kilima Village and beyond, check out Palia’s system
+                requirements and head over to palia.com to create an account. Following account creation, you can
+                download the Palia launcher, install the game, then hop in and adventure with friends new and old!</p>
+        </section>
+
+        <section>
+            <img src="./src/image02.png" alt="Image 2">
+            <p>We’d like to thank everyone who has participated in our Alpha tests, Closed Beta, and interacted with
+                our community. And we especially want to thank those who have been patiently waiting for their turn to play. The feedback that we have received on all fronts has been instrumental in our effort to make Palia the most charming, welcoming, and playful gameplay experience for our community. You all have been so helpful and patient with us as we smooth out the rough edges of the game and continue iterating on what makes Palia the captivating and cozy community sim MMO that we envision.</p>
+        </section>
+
+        <section>
+            <img src="./src/image03.png" alt="Image 3">
+            <p>And while the game is now available to all – we are just getting started building the world of Palia.
+                The team has tons of content planned for the game’s Open Beta phase and beyond as noted in a letter to our community by Palia’s Game Director, Aidan Karabaich. Open Beta players can expect new quests,
+                storylines, villagers, housing and character customization options, beards (woot!), and so much more.</p>
+
+            <p>Without further ado, grab your axe, maybe some snacks, throw on your adventure boots, and step into the whimsical world of Palia! And as always, Welcome Home!</p>
+        </section>
+    </article>
+
+    <!-- Newsletter -->
+    <form>
+        <h2>Make Palia Your Home</h2>
+        <p>Stay connected and sign up for our Newsletter!</p>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+        <input type="submit" value="SIGN UP">
+        <p>Enter your email for Palia news, updates, and more! For further details please view our Privacy Notice.</p>
+    </form>
+
+    <footer>
+        &copy; 2023 Palia
+    </footer>
+
+</body>
+
+</html>
