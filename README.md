@@ -9,7 +9,7 @@ Creé este portafolio el 13/11/2023 para tener todo a la vista.
 
 Echa un vistazo a los ejercicios y proyectos que he hecho.
 Es básicamente mi bitácora de aprendizaje.
-Además, he montado un HUB para que los tutores puedan revisar fácilmente mis tareas y evaluaciones.
+Además, he creado un HUB para que los tutores puedan revisar y evaluar fácilmente mis tareas.
 
 ¡Gracias por visitar! 🚀
 
