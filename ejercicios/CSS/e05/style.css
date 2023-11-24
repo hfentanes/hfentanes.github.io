@@ -1,0 +1,77 @@
+.card {
+  width: 572px;
+  height: auto;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image {
+  width: 572px;
+  height: 360px;
+  background-color: #878e95;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px auto 0;
+  text-align: center;
+  line-height: 360px;
+}
+
+.desc {
+  font-family: "Ariel", sans-serif;
+  font-size: 36px;
+  color: #dee2e6;
+}
+
+.texto {
+  font-family: "Ariel", sans-serif;
+  text-align: left;
+}
+
+h3 {
+  margin: 40px 40px 0;
+  color: #000;
+  font-size: 40px;
+}
+
+.intro {
+  color: #000;
+  font-size: 32px;
+  padding: 40px;
+  margin: 0px;
+}
+
+.info p {
+  color: #000;
+  font-size: 32px;
+  padding: 26px 40px;
+  border-top: 2px solid #dfdfdf;
+  margin: 0px;
+}
+
+.info p:nth-child(3) {
+  color: #000;
+  font-size: 32px;
+  padding: 26px 40px;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  margin: 0px;
+}
+
+.enlaces {
+  padding: 40px;
+}
+
+.enlaces a {
+  color: #316cf5;
+  font-weight: 600px;
+  font-size: 32px;
+}
+
+.enlaces a:nth-child(2) {
+  color: #316cf5;
+  font-weight: 600px;
+  font-size: 32px;
+  margin-left: 40px;
+}
