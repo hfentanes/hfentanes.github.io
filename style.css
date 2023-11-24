@@ -1,6 +1,6 @@
 .card {
   width: 572px;
-  height: auto;
+  max-width: 100%;
   border: 2px solid #dfdfdf;
   border-radius: 10px;
   margin: 0 auto;
@@ -8,29 +8,28 @@
 }
 
 .image {
-  width: 572px;
+  width: 100%;
   height: 360px;
   background-color: #878e95;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 0px auto 0;
   text-align: center;
   line-height: 360px;
 }
 
 .desc {
-  font-family: "Ariel", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 36px;
   color: #dee2e6;
 }
 
 .texto {
-  font-family: "Ariel", sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: left;
 }
 
 h3 {
-  margin: 40px 40px 0;
+  margin: 20px;
   color: #000;
   font-size: 40px;
 }
@@ -38,40 +37,46 @@ h3 {
 .intro {
   color: #000;
   font-size: 32px;
-  padding: 40px;
-  margin: 0px;
+  padding: 20px;
+  margin: 0;
 }
 
 .info p {
   color: #000;
   font-size: 32px;
-  padding: 26px 40px;
+  padding: 16px 20px;
   border-top: 2px solid #dfdfdf;
-  margin: 0px;
-}
-
-.info p:nth-child(3) {
-  color: #000;
-  font-size: 32px;
-  padding: 26px 40px;
-  border-top: 2px solid #dfdfdf;
-  border-bottom: 2px solid #dfdfdf;
-  margin: 0px;
+  margin: 0;
 }
 
 .enlaces {
-  padding: 40px;
+  padding: 20px;
 }
 
 .enlaces a {
   color: #316cf5;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 32px;
+  margin-right: 20px;
 }
 
-.enlaces a:nth-child(2) {
-  color: #316cf5;
-  font-weight: 600px;
-  font-size: 32px;
-  margin-left: 40px;
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .image {
+    height: 200px;
+    line-height: 200px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .intro,
+  .info p,
+  .enlaces a {
+    font-size: 18px;
+  }
 }
