@@ -1,0 +1,30 @@
+[
+{
+    "title": "HTML",
+    "open": false,
+    "children": [
+        {
+            "title": "div",
+            "link": "#"
+        },
+        {
+            "title": "section",
+            "link": "#"
+        }
+    ]
+},
+{
+    "title": "CSS",
+    "open": false,
+    "children": [
+        {
+            "title": "padding",
+            "link": "#"
+        },
+        {
+            "title": "margin",
+            "link": "#"
+        }
+    ]
+}
+]
