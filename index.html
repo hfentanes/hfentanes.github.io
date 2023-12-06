@@ -1,211 +1,369 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hadassa Fentanes</title>
-    <link rel="icon" href="./src/images/logodassa.png" type="image/png" />
-    <meta
-      property="og:image"
-      content="https://hfentanes.github.io/src/images/imagedassa.jpg"
-      alt="Un dibujo de una chica usando un portátil y saludando."
+    <title>Ejercicio 13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
     />
-    <meta name="description" content="Este es mi portafolio." />
-    <meta property="article:author" content="https://github.com/hfentanes" />
-    <meta property="og:site_name" content="Portafolio Hadassa Fentanes" />
-    <meta property="og:title" content="Portafolio HUB" />
-    <meta
-      property="og:description"
-      content="Mi portafolio está en constante evolución, pero ya puedes encontrar información sobre mi trabajo aquí. ¡Conéctate conmigo en las redes sociales para estar al tanto de las últimas novedades y proyectos!"
-    />
-    <meta property="article:tag" content="Tecnología" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="article:published_time" content="2023-11-13T10:00:00Z" />
-
-    <meta property="og:image:width" content="640" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:url" content="https://hfentanes.github.io" />
-
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
 
-      <div class='top'></div>
+    <section class="card-list">
+        <!-- card1 -->
+        <div class="card">
+
+        <!-- barra del topo -->
+            <div class="card top">
+                <img
+                class="profile"
+                src="src/profile1.jpg"
+                alt="Rubens Chagas' profile pic"
+                />
+
+                <div class="personal-info">
+                <p class="name">Rubens Chagas</p>
+                <p class="date">Miércoles, 06/12/2023</p>
+                </div>
+
+                <div class="options">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    fill="#3C3C3C"
+                    stroke="#3C3C3C"
+                >
+                    <path
+                    d="M19.8188 19.2153C20.0592 18.8556 20.1875 18.4326 20.1875 18C20.1875 17.4198 19.957 16.8634 19.5468 16.4532C19.1366 16.043 18.5802 15.8125 18 15.8125C17.5674 15.8125 17.1444 15.9408 16.7847 16.1812C16.425 16.4215 16.1446 16.7632 15.979 17.1629C15.8134 17.5626 15.7701 18.0024 15.8545 18.4268C15.9389 18.8511 16.1473 19.2409 16.4532 19.5468C16.7591 19.8527 17.1489 20.0611 17.5732 20.1455C17.9976 20.2299 18.4374 20.1866 18.8371 20.021C19.2368 19.8554 19.5785 19.575 19.8188 19.2153ZM27.5625 15.8125C27.1299 15.8125 26.7069 15.9408 26.3472 16.1812C25.9875 16.4215 25.7071 16.7632 25.5415 17.1629C25.3759 17.5626 25.3326 18.0024 25.417 18.4268C25.5014 18.8511 25.7098 19.2409 26.0157 19.5468C26.3216 19.8527 26.7114 20.0611 27.1357 20.1455C27.5601 20.2299 27.9999 20.1866 28.3996 20.021C28.7993 19.8554 29.141 19.575 29.3813 19.2153C29.6217 18.8556 29.75 18.4326 29.75 18C29.75 17.4198 29.5195 16.8634 29.1093 16.4532C28.6991 16.043 28.1427 15.8125 27.5625 15.8125ZM8.4375 15.8125C8.00485 15.8125 7.58192 15.9408 7.22219 16.1812C6.86246 16.4215 6.58208 16.7632 6.41651 17.1629C6.25095 17.5626 6.20763 18.0024 6.29203 18.4268C6.37644 18.8511 6.58478 19.2409 6.8907 19.5468C7.19663 19.8527 7.58641 20.0611 8.01074 20.1455C8.43508 20.2299 8.87491 20.1866 9.27462 20.021C9.67433 19.8554 10.016 19.575 10.2563 19.2153C10.4967 18.8556 10.625 18.4326 10.625 18C10.625 17.4198 10.3945 16.8634 9.9843 16.4532C9.57406 16.043 9.01766 15.8125 8.4375 15.8125Z"
+                    />
+                </svg>
+                </div>
+        </div>
+
+        <!-- image -->
+        <div class="image">
+                <img
+                src="src/post1.jpg"
+                alt="Rubens Chagas' post picture"
+                />
+        </div>
+
+        <!-- parte principal -->
+        <div class="card bottom">
+
+                <!-- iconos con acciones -->
+                <div class="icons">
+                    <div>
+                        <svg class="heart"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        stroke="#2C2C2C"
+                        stroke-width="1.6"
+                        >
+                        <path
+                            d="M11 18.4308C10.6252 18.2264 8.49377 17.0252 6.40927 15.1997C4.15538 13.2258 2.17522 10.7119 2.175 8.07856C2.17648 6.87797 2.65406 5.72697 3.50302 4.87802C4.35197 4.02906 5.50297 3.55148 6.70356 3.55C8.24419 3.55012 9.55333 4.20868 10.3603 5.28339L11 6.13543L11.6397 5.28339C12.4467 4.20868 13.7558 3.55012 15.2964 3.55C16.497 3.55148 17.648 4.02906 18.497 4.87802C19.346 5.72708 19.8236 6.87827 19.825 8.07903C19.8245 10.7122 17.8445 13.226 15.5907 15.1997C13.5062 17.0252 11.3748 18.2264 11 18.4308Z"
+                        />
+                        </svg>
+                    </div>
+                    <div class="comment">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        >
+                        <path
+                            d="M11 2.0625C9.45696 2.06216 7.94012 2.46133 6.59712 3.22113C5.25412 3.98094 4.13071 5.07551 3.33624 6.3983C2.54177 7.7211 2.1033 9.22704 2.06352 10.7696C2.02373 12.3121 2.38399 13.8386 3.10922 15.2006L2.13383 18.1268C2.05303 18.3691 2.04131 18.6291 2.09996 18.8776C2.15862 19.1262 2.28535 19.3535 2.46593 19.5341C2.64652 19.7147 2.87383 19.8414 3.12239 19.9C3.37095 19.9587 3.63093 19.947 3.8732 19.8662L6.79937 18.8908C7.998 19.5283 9.32612 19.8844 10.6829 19.932C12.0397 19.9796 13.3895 19.7175 14.6299 19.1655C15.8702 18.6136 16.9686 17.7863 17.8415 16.7465C18.7144 15.7067 19.339 14.4817 19.6678 13.1645C19.9966 11.8473 20.021 10.4725 19.7391 9.14447C19.4572 7.81642 18.8765 6.57004 18.0411 5.49993C17.2056 4.42982 16.1373 3.5641 14.9173 2.9685C13.6973 2.3729 12.3576 2.06306 11 2.0625ZM11 18.5625C9.67052 18.5634 8.36438 18.2133 7.21359 17.5476C7.12933 17.4987 7.03566 17.4683 6.93876 17.4584C6.84187 17.4485 6.74397 17.4592 6.65156 17.49L3.4375 18.5625L4.50914 15.3484C4.54003 15.2561 4.55095 15.1582 4.54117 15.0613C4.53139 14.9644 4.50114 14.8707 4.45242 14.7864C3.6188 13.3452 3.28411 11.6691 3.50026 10.0182C3.71641 8.36734 4.47132 6.83394 5.64789 5.65588C6.82445 4.47783 8.3569 3.72098 10.0075 3.50275C11.6581 3.28451 13.3346 3.61709 14.7769 4.44888C16.2192 5.28068 17.3467 6.5652 17.9844 8.10318C18.6222 9.64115 18.7346 11.3466 18.3042 12.955C17.8738 14.5634 16.9246 15.9847 15.604 16.9986C14.2833 18.0125 12.665 18.5622 11 18.5625Z"
+                            fill="#3C3C3C"
+                        />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- descripción -->
+                <div class="description">
+                    <p>
+                        <span class="cat-name">Senna</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum magni aliquam. Nulla minus repudiandae voluptatem eveniet exercitationem dignissimos similique, dolores.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- card2 -->
+        <div class="card">
+
+            <!-- barra del topo -->
+            <div class="card top">
+                <img
+                class="profile"
+                src="src/profile2.jpg"
+                alt="Vik' profile pic"
+                />
     
-    <br /><br /><br />
-    <div class="contenedor">
-      <section class="bio">
-        <img
-          src="./src/images/fotodassa.png"
-          alt="Foto de Hadassa Fentanes"
-        />
-        <h5>Hadassa Fentanes</h5>
-
-        <div class="redes-sociales">
-          <a href="https://www.linkedin.com/in/hfentanes/" target="_blank" class="rss linkedin">
-            <i class="ph-fill ph-linkedin-logo"></i>
-          </a>
-          <a href="https://www.behance.net/hfentanes" target="_blank" class="rss behance">
-            <i class="ph-fill ph-behance-logo"></i>
-          </a>
-          <a href="https://www.instagram.com/hadassa.jpg" target="_blank" class="rss instagram">
-            <i class="ph-fill ph-instagram-logo"></i>
-          </a>
+                <div class="personal-info">
+                <p class="name">Vik</p>
+                <p class="date">Martes, 05/12/2023</p>
+                </div>
+    
+                <div class="options">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    fill="#3C3C3C"
+                    stroke="#3C3C3C"
+                >
+                    <path
+                    d="M19.8188 19.2153C20.0592 18.8556 20.1875 18.4326 20.1875 18C20.1875 17.4198 19.957 16.8634 19.5468 16.4532C19.1366 16.043 18.5802 15.8125 18 15.8125C17.5674 15.8125 17.1444 15.9408 16.7847 16.1812C16.425 16.4215 16.1446 16.7632 15.979 17.1629C15.8134 17.5626 15.7701 18.0024 15.8545 18.4268C15.9389 18.8511 16.1473 19.2409 16.4532 19.5468C16.7591 19.8527 17.1489 20.0611 17.5732 20.1455C17.9976 20.2299 18.4374 20.1866 18.8371 20.021C19.2368 19.8554 19.5785 19.575 19.8188 19.2153ZM27.5625 15.8125C27.1299 15.8125 26.7069 15.9408 26.3472 16.1812C25.9875 16.4215 25.7071 16.7632 25.5415 17.1629C25.3759 17.5626 25.3326 18.0024 25.417 18.4268C25.5014 18.8511 25.7098 19.2409 26.0157 19.5468C26.3216 19.8527 26.7114 20.0611 27.1357 20.1455C27.5601 20.2299 27.9999 20.1866 28.3996 20.021C28.7993 19.8554 29.141 19.575 29.3813 19.2153C29.6217 18.8556 29.75 18.4326 29.75 18C29.75 17.4198 29.5195 16.8634 29.1093 16.4532C28.6991 16.043 28.1427 15.8125 27.5625 15.8125ZM8.4375 15.8125C8.00485 15.8125 7.58192 15.9408 7.22219 16.1812C6.86246 16.4215 6.58208 16.7632 6.41651 17.1629C6.25095 17.5626 6.20763 18.0024 6.29203 18.4268C6.37644 18.8511 6.58478 19.2409 6.8907 19.5468C7.19663 19.8527 7.58641 20.0611 8.01074 20.1455C8.43508 20.2299 8.87491 20.1866 9.27462 20.021C9.67433 19.8554 10.016 19.575 10.2563 19.2153C10.4967 18.8556 10.625 18.4326 10.625 18C10.625 17.4198 10.3945 16.8634 9.9843 16.4532C9.57406 16.043 9.01766 15.8125 8.4375 15.8125Z"
+                    />
+                </svg>
+                </div>
+            </div>
+    
+            <!-- image -->
+            <div class="image">
+                <img
+                src="src/image2.jpg"
+                alt="Vik's post picture"
+                />
+            </div>
+    
+            <!-- parte principal -->
+            <div class="card bottom">
+            
+                <!-- iconos con acciones -->
+                <div class="icons">
+                    <div>
+                        <svg class="heart"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        stroke="#2C2C2C"
+                        stroke-width="1.6"
+                        >
+                        <path
+                            d="M11 18.4308C10.6252 18.2264 8.49377 17.0252 6.40927 15.1997C4.15538 13.2258 2.17522 10.7119 2.175 8.07856C2.17648 6.87797 2.65406 5.72697 3.50302 4.87802C4.35197 4.02906 5.50297 3.55148 6.70356 3.55C8.24419 3.55012 9.55333 4.20868 10.3603 5.28339L11 6.13543L11.6397 5.28339C12.4467 4.20868 13.7558 3.55012 15.2964 3.55C16.497 3.55148 17.648 4.02906 18.497 4.87802C19.346 5.72708 19.8236 6.87827 19.825 8.07903C19.8245 10.7122 17.8445 13.226 15.5907 15.1997C13.5062 17.0252 11.3748 18.2264 11 18.4308Z"
+                        />
+                        </svg>
+                    </div>
+                    <div class="comment">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        >
+                        <path
+                            d="M11 2.0625C9.45696 2.06216 7.94012 2.46133 6.59712 3.22113C5.25412 3.98094 4.13071 5.07551 3.33624 6.3983C2.54177 7.7211 2.1033 9.22704 2.06352 10.7696C2.02373 12.3121 2.38399 13.8386 3.10922 15.2006L2.13383 18.1268C2.05303 18.3691 2.04131 18.6291 2.09996 18.8776C2.15862 19.1262 2.28535 19.3535 2.46593 19.5341C2.64652 19.7147 2.87383 19.8414 3.12239 19.9C3.37095 19.9587 3.63093 19.947 3.8732 19.8662L6.79937 18.8908C7.998 19.5283 9.32612 19.8844 10.6829 19.932C12.0397 19.9796 13.3895 19.7175 14.6299 19.1655C15.8702 18.6136 16.9686 17.7863 17.8415 16.7465C18.7144 15.7067 19.339 14.4817 19.6678 13.1645C19.9966 11.8473 20.021 10.4725 19.7391 9.14447C19.4572 7.81642 18.8765 6.57004 18.0411 5.49993C17.2056 4.42982 16.1373 3.5641 14.9173 2.9685C13.6973 2.3729 12.3576 2.06306 11 2.0625ZM11 18.5625C9.67052 18.5634 8.36438 18.2133 7.21359 17.5476C7.12933 17.4987 7.03566 17.4683 6.93876 17.4584C6.84187 17.4485 6.74397 17.4592 6.65156 17.49L3.4375 18.5625L4.50914 15.3484C4.54003 15.2561 4.55095 15.1582 4.54117 15.0613C4.53139 14.9644 4.50114 14.8707 4.45242 14.7864C3.6188 13.3452 3.28411 11.6691 3.50026 10.0182C3.71641 8.36734 4.47132 6.83394 5.64789 5.65588C6.82445 4.47783 8.3569 3.72098 10.0075 3.50275C11.6581 3.28451 13.3346 3.61709 14.7769 4.44888C16.2192 5.28068 17.3467 6.5652 17.9844 8.10318C18.6222 9.64115 18.7346 11.3466 18.3042 12.955C17.8738 14.5634 16.9246 15.9847 15.604 16.9986C14.2833 18.0125 12.665 18.5622 11 18.5625Z"
+                            fill="#3C3C3C"
+                        />
+                        </svg>
+                    </div>
+                </div>
+    
+                <!-- descripción -->
+                <div class="description">
+                    <p>
+                        <span class="cat-name">Kira</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum magni aliquam. Nulla minus repudiandae voluptatem eveniet exercitationem dignissimos similique, dolores.
+                    </p>
+                </div>
+    
+            </div>
         </div>
 
-        <br />
-        <p class="biografia">ABOUT ME</p>
-        <p>
-          Como <b>diseñadora UI/UX</b> con experiencia previa en <b>diseño gráfico</b>, mi objetivo es ayudar a las empresas en su crecimiento y ayudar a los futuros clientes a alcanzar sus objetivos. Mi experiencia abarca el diseño web y aplicaciones móviles. Puedo crear diseños de sitios web, desarrollar prototipos, realizar análisis de competidores e identificar audiencias objetivo. Soy una jugadora de equipo colaborativa, conocida por mi responsabilidad y compromiso con los plazos. Proficiente en <b>Adobe Photoshop</b>, <b>Figma</b> y <b>Adobe Illustrator</b>, también tengo un conocimiento básico de <b>HTML</b> y <b>CSS</b>. Hablo inglés, portugués y español con fluidez.
-        </p>
-        <br />
-        <p>
-          Tienes interés en trabajar juntos? <br />No dudes en contactarme en
-          <a href="mailto:hadassafentanes@gmail.com" class="enlace"
-            >hadassafentanes@gmail.com</a
-          >.
-        </p>
-      </section>
+        <!-- card3 -->
+        <div class="card">
 
-      <section class="sumario">
-        <h6><i class="ph ph-pencil-circle"></i>Ejercicios</h6>
-        <ul>
-          <!-- <li>
-            <a href="/ejercicios/e00/index.html" class="botones">
-              <h4>e00. Escenario Palia</h4>
-              <p>
-                Representación gráfica de un escenario en el juego llamado
-                Palia.
-              </p>
-            </a>
-          </li> -->
-          <li>
-            <a href="./ejercicios/HTML/e01/" class="botones">
-              <h4>e01. Head</h4>
-              <p>
-                Mi primer ejercicio HTML. En él hicimos la exploración del encabezado (no hay body!!) y la aplicación del Protocolo Open Graph para mejorar la presentación en redes sociales.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e02/" class="botones">
-              <h4>e02. Estructure</h4>
-              <p>
-                En este ejercicio, repliqué la estructura de la captura de pantalla de una página simple sin utilizar estilos CSS, enfocándome únicamente en los elementos estructurales.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e03/" class="botones">
-              <h4>e03. Table</h4>
-              <p>
-                He creado una tabla con columnas para "Meses", "Ingresos" y "Gastos", con datos ficticios y un total al final. El enfoque ha sido practicar la organización de tablas en HTML.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e04/" class="botones">
-              <h4>e04. Navbar</h4>
-              <p>
-                Desarrollé una barra de navegación en HTML, siguiendo las indicaciones del enunciado y garantizand que fuera similar a la imagen de referencia proporcionada.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e05/" class="botones">
-              <h4>e05. Card</h4>
-              <p>
-                Siguiendo las indicaciones proporcionadas en el enunciado, he creado un componente de tarjeta (card) en HTML que replica la estructura y diseño de la imagen proporcionada.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e06/" class="botones">
-              <h4>e06. Form</h4>
-              <p>
-                Diseñé un formulario completo que incluye los campos especificados en las instrucciones. Con el objetivo de mejorar la experiencia del usuario, implementé placeholders y máscaras.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e07/" class="botones">
-              <h4>e07. Attributes</h4>
-              <p>
-                Implementé un botón desactivado, un campo de entrada con etiqueta en el rango de 0-100 y un paso doble, una casilla de verificación preseleccionada y un campo de fecha.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e08/" class="botones">
-              <h4>e08. Validation</h4>
-              <p>
-                En esta tarea, optimicé un formulario HTML ya existente al hacer elementos obligatorios, limitar caracteres en CVV y número de tarjeta, y implementar placeholders y restricciones en otros campos.
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href="./ejercicios/HTML/e09/" class="botones">
-              <h4>e09. Blog Page</h4>
-              <p>
-                He creado una página de blog que incluye un artículo con título, párrafo, imágenes de fondo y pie de página. El formulario cuenta con un campo de correo electrónico obligatorio y un botón de enviar.
-              </p>
-            </a>
-          </li>
-        </ul>
-      </section>
+        <!-- barra del topo -->
+            <div class="card top">
+                <img
+                class="profile"
+                src="src/profile3.jpg"
+                alt="Hadassa Fentanes' profile pic"
+                />
 
-    </div>
-    <h2>Mis Proyectos</h2>
-    <section class="proyectos">
-      <div class="proyecto">
-        <a
-          href="https://www.behance.net/gallery/178528173/Meu-Portfolio"
-          target="_blank"
-        >
-          <img src="./src/images/port.jpg" alt="Portada del portafolio" />
-          <h3>Mi portafolio</h3>
-        </a>
-        <div class="shortify" data-active="true">
-          <p>Este es mi portafolio actualizado, donde encontrarás información sobre mí, mis experiencias, formación, habilidades y algunos ejemplos de los trabajos que he realizado. Esto incluye la creación de interfaces, la elaboración de imágenes promocionales, el diseño de logotipos, el branding, la corrección y mejora de fotografías, así como la creación de currículos, entre otros.</p>
-          <br>
-          <button class="btn-info">Ver más</button>
+                <div class="personal-info">
+                <p class="name">Hadassa Fentanes</p>
+                <p class="date">Martes, 05/12/2023</p>
+                </div>
+
+                <div class="options">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    fill="#3C3C3C"
+                    stroke="#3C3C3C"
+                >
+                    <path
+                    d="M19.8188 19.2153C20.0592 18.8556 20.1875 18.4326 20.1875 18C20.1875 17.4198 19.957 16.8634 19.5468 16.4532C19.1366 16.043 18.5802 15.8125 18 15.8125C17.5674 15.8125 17.1444 15.9408 16.7847 16.1812C16.425 16.4215 16.1446 16.7632 15.979 17.1629C15.8134 17.5626 15.7701 18.0024 15.8545 18.4268C15.9389 18.8511 16.1473 19.2409 16.4532 19.5468C16.7591 19.8527 17.1489 20.0611 17.5732 20.1455C17.9976 20.2299 18.4374 20.1866 18.8371 20.021C19.2368 19.8554 19.5785 19.575 19.8188 19.2153ZM27.5625 15.8125C27.1299 15.8125 26.7069 15.9408 26.3472 16.1812C25.9875 16.4215 25.7071 16.7632 25.5415 17.1629C25.3759 17.5626 25.3326 18.0024 25.417 18.4268C25.5014 18.8511 25.7098 19.2409 26.0157 19.5468C26.3216 19.8527 26.7114 20.0611 27.1357 20.1455C27.5601 20.2299 27.9999 20.1866 28.3996 20.021C28.7993 19.8554 29.141 19.575 29.3813 19.2153C29.6217 18.8556 29.75 18.4326 29.75 18C29.75 17.4198 29.5195 16.8634 29.1093 16.4532C28.6991 16.043 28.1427 15.8125 27.5625 15.8125ZM8.4375 15.8125C8.00485 15.8125 7.58192 15.9408 7.22219 16.1812C6.86246 16.4215 6.58208 16.7632 6.41651 17.1629C6.25095 17.5626 6.20763 18.0024 6.29203 18.4268C6.37644 18.8511 6.58478 19.2409 6.8907 19.5468C7.19663 19.8527 7.58641 20.0611 8.01074 20.1455C8.43508 20.2299 8.87491 20.1866 9.27462 20.021C9.67433 19.8554 10.016 19.575 10.2563 19.2153C10.4967 18.8556 10.625 18.4326 10.625 18C10.625 17.4198 10.3945 16.8634 9.9843 16.4532C9.57406 16.043 9.01766 15.8125 8.4375 15.8125Z"
+                    />
+                </svg>
+                </div>
         </div>
-      </div>
-      <div class="proyecto">
-        <a
-          href="https://www.behance.net/gallery/180139639/Reformulacao-de-tela-para-a-UnoELo"
-          target="_blank"
-        >
-          <img
-            src="./src/images/unoelo.jpg"
-            alt="Portada del proyecto UnoElo"
-          />
-          <h3>Reformulación UnoElo</h3>
-        </a>
-        <div class="shortify" data-active="true">
-          <p>Esta es una presentación en la que demuestro mis conocimientos en UX y UI para la reformulación de la pantalla 'Mis Proyectos', centrándome en tres componentes (menú, filtro y tarjeta). En ella, realizo un breve análisis de los sitios web de la competencia, vectorizo logotipos, creo una paleta de colores y diseño interfaces responsivas. Además, explico algunas de las decisiones tomadas a lo largo de todo el proceso.</p>
-          <br>
-          <button class="btn-info">Ver más</button>
+
+        <!-- image -->
+        <div class="image">
+                <img
+                src="src/image3.jpg"
+                alt="Hadassa Fentanes' post picture"
+                />
         </div>
-      </div>
-      <div class="proyecto">
-        <a
-          href="https://www.behance.net/gallery/166834827/Flora-Project"
-          target="_blank"
-        >
-          <img src="./src/images/flora.jpg" alt="Portada del proyecto Flora" />
-          <h3>Flora TFG</h3>
-        </a>
-        <div class="shortify" data-active="true">
-          <p>Este trabajo representa mi tesis de fin de curso. En él, elegí un tema que me interesara y realicé un análisis de UX/UI sobre el tema que seleccioné. El contenido de la presentación abarca desde las etapas iniciales, como la investigación del público objetivo y la creación de personas, hasta la fase de desarrollo del flujo del usuario y los wireframes. El proyecto se completa con la creación de prototipos de alta calidad, junto con una sugerencia para futuras expansiones.</p>
-          <br>
-          <button class="btn-info">Ver más</button>
+
+        <!-- parte principal -->
+        <div class="card bottom">
+            
+                <!-- iconos con acciones -->
+                <div class="icons">
+                    <div>
+                        <svg class="heart"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        stroke="#2C2C2C"
+                        stroke-width="1.6"
+                        >
+                        <path
+                            d="M11 18.4308C10.6252 18.2264 8.49377 17.0252 6.40927 15.1997C4.15538 13.2258 2.17522 10.7119 2.175 8.07856C2.17648 6.87797 2.65406 5.72697 3.50302 4.87802C4.35197 4.02906 5.50297 3.55148 6.70356 3.55C8.24419 3.55012 9.55333 4.20868 10.3603 5.28339L11 6.13543L11.6397 5.28339C12.4467 4.20868 13.7558 3.55012 15.2964 3.55C16.497 3.55148 17.648 4.02906 18.497 4.87802C19.346 5.72708 19.8236 6.87827 19.825 8.07903C19.8245 10.7122 17.8445 13.226 15.5907 15.1997C13.5062 17.0252 11.3748 18.2264 11 18.4308Z"
+                        />
+                        </svg>
+                    </div>
+                    <div class="comment">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        >
+                        <path
+                            d="M11 2.0625C9.45696 2.06216 7.94012 2.46133 6.59712 3.22113C5.25412 3.98094 4.13071 5.07551 3.33624 6.3983C2.54177 7.7211 2.1033 9.22704 2.06352 10.7696C2.02373 12.3121 2.38399 13.8386 3.10922 15.2006L2.13383 18.1268C2.05303 18.3691 2.04131 18.6291 2.09996 18.8776C2.15862 19.1262 2.28535 19.3535 2.46593 19.5341C2.64652 19.7147 2.87383 19.8414 3.12239 19.9C3.37095 19.9587 3.63093 19.947 3.8732 19.8662L6.79937 18.8908C7.998 19.5283 9.32612 19.8844 10.6829 19.932C12.0397 19.9796 13.3895 19.7175 14.6299 19.1655C15.8702 18.6136 16.9686 17.7863 17.8415 16.7465C18.7144 15.7067 19.339 14.4817 19.6678 13.1645C19.9966 11.8473 20.021 10.4725 19.7391 9.14447C19.4572 7.81642 18.8765 6.57004 18.0411 5.49993C17.2056 4.42982 16.1373 3.5641 14.9173 2.9685C13.6973 2.3729 12.3576 2.06306 11 2.0625ZM11 18.5625C9.67052 18.5634 8.36438 18.2133 7.21359 17.5476C7.12933 17.4987 7.03566 17.4683 6.93876 17.4584C6.84187 17.4485 6.74397 17.4592 6.65156 17.49L3.4375 18.5625L4.50914 15.3484C4.54003 15.2561 4.55095 15.1582 4.54117 15.0613C4.53139 14.9644 4.50114 14.8707 4.45242 14.7864C3.6188 13.3452 3.28411 11.6691 3.50026 10.0182C3.71641 8.36734 4.47132 6.83394 5.64789 5.65588C6.82445 4.47783 8.3569 3.72098 10.0075 3.50275C11.6581 3.28451 13.3346 3.61709 14.7769 4.44888C16.2192 5.28068 17.3467 6.5652 17.9844 8.10318C18.6222 9.64115 18.7346 11.3466 18.3042 12.955C17.8738 14.5634 16.9246 15.9847 15.604 16.9986C14.2833 18.0125 12.665 18.5622 11 18.5625Z"
+                            fill="#3C3C3C"
+                        />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- descripción -->
+                <div class="description">
+                    <p>
+                        <span class="cat-name">Kenma</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum magni aliquam. Nulla minus repudiandae voluptatem eveniet exercitationem dignissimos similique, dolores.
+                    </p>
+                </div>
+
+            </div>
         </div>
-      </div>
+
+        <!-- card4 -->
+        <div class="card">
+
+            <!-- barra del topo -->
+                <div class="card top">
+                    <img
+                    class="profile"
+                    src="src/profile4.jpg"
+                    alt="Lucas Pedro Silva's profile pic"
+                    />
+        
+                    <div class="personal-info">
+                    <p class="name">Lucas Pedro Silva</p>
+                    <p class="date">Lunes, 04/12/2023</p>
+                    </div>
+        
+                    <div class="options">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        fill="#3C3C3C"
+                        stroke="#3C3C3C"
+                    >
+                        <path
+                        d="M19.8188 19.2153C20.0592 18.8556 20.1875 18.4326 20.1875 18C20.1875 17.4198 19.957 16.8634 19.5468 16.4532C19.1366 16.043 18.5802 15.8125 18 15.8125C17.5674 15.8125 17.1444 15.9408 16.7847 16.1812C16.425 16.4215 16.1446 16.7632 15.979 17.1629C15.8134 17.5626 15.7701 18.0024 15.8545 18.4268C15.9389 18.8511 16.1473 19.2409 16.4532 19.5468C16.7591 19.8527 17.1489 20.0611 17.5732 20.1455C17.9976 20.2299 18.4374 20.1866 18.8371 20.021C19.2368 19.8554 19.5785 19.575 19.8188 19.2153ZM27.5625 15.8125C27.1299 15.8125 26.7069 15.9408 26.3472 16.1812C25.9875 16.4215 25.7071 16.7632 25.5415 17.1629C25.3759 17.5626 25.3326 18.0024 25.417 18.4268C25.5014 18.8511 25.7098 19.2409 26.0157 19.5468C26.3216 19.8527 26.7114 20.0611 27.1357 20.1455C27.5601 20.2299 27.9999 20.1866 28.3996 20.021C28.7993 19.8554 29.141 19.575 29.3813 19.2153C29.6217 18.8556 29.75 18.4326 29.75 18C29.75 17.4198 29.5195 16.8634 29.1093 16.4532C28.6991 16.043 28.1427 15.8125 27.5625 15.8125ZM8.4375 15.8125C8.00485 15.8125 7.58192 15.9408 7.22219 16.1812C6.86246 16.4215 6.58208 16.7632 6.41651 17.1629C6.25095 17.5626 6.20763 18.0024 6.29203 18.4268C6.37644 18.8511 6.58478 19.2409 6.8907 19.5468C7.19663 19.8527 7.58641 20.0611 8.01074 20.1455C8.43508 20.2299 8.87491 20.1866 9.27462 20.021C9.67433 19.8554 10.016 19.575 10.2563 19.2153C10.4967 18.8556 10.625 18.4326 10.625 18C10.625 17.4198 10.3945 16.8634 9.9843 16.4532C9.57406 16.043 9.01766 15.8125 8.4375 15.8125Z"
+                        />
+                    </svg>
+                    </div>
+            </div>
+        
+            <!-- image -->
+            <div class="image">
+                    <img
+                    src="src/image4.jpg"
+                    alt="Lucas Pedro Silva's post picture"
+                    />
+            </div>
+        
+            <!-- parte principal -->
+            <div class="card bottom">
+                
+                    <!-- iconos con acciones -->
+                    <div class="icons">
+                        <div>
+                            <svg class="heart"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            stroke="#2C2C2C"
+                            stroke-width="1.6"
+                            >
+                            <path
+                                d="M11 18.4308C10.6252 18.2264 8.49377 17.0252 6.40927 15.1997C4.15538 13.2258 2.17522 10.7119 2.175 8.07856C2.17648 6.87797 2.65406 5.72697 3.50302 4.87802C4.35197 4.02906 5.50297 3.55148 6.70356 3.55C8.24419 3.55012 9.55333 4.20868 10.3603 5.28339L11 6.13543L11.6397 5.28339C12.4467 4.20868 13.7558 3.55012 15.2964 3.55C16.497 3.55148 17.648 4.02906 18.497 4.87802C19.346 5.72708 19.8236 6.87827 19.825 8.07903C19.8245 10.7122 17.8445 13.226 15.5907 15.1997C13.5062 17.0252 11.3748 18.2264 11 18.4308Z"
+                            />
+                            </svg>
+                        </div>
+                        <div class="comment">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            >
+                            <path
+                                d="M11 2.0625C9.45696 2.06216 7.94012 2.46133 6.59712 3.22113C5.25412 3.98094 4.13071 5.07551 3.33624 6.3983C2.54177 7.7211 2.1033 9.22704 2.06352 10.7696C2.02373 12.3121 2.38399 13.8386 3.10922 15.2006L2.13383 18.1268C2.05303 18.3691 2.04131 18.6291 2.09996 18.8776C2.15862 19.1262 2.28535 19.3535 2.46593 19.5341C2.64652 19.7147 2.87383 19.8414 3.12239 19.9C3.37095 19.9587 3.63093 19.947 3.8732 19.8662L6.79937 18.8908C7.998 19.5283 9.32612 19.8844 10.6829 19.932C12.0397 19.9796 13.3895 19.7175 14.6299 19.1655C15.8702 18.6136 16.9686 17.7863 17.8415 16.7465C18.7144 15.7067 19.339 14.4817 19.6678 13.1645C19.9966 11.8473 20.021 10.4725 19.7391 9.14447C19.4572 7.81642 18.8765 6.57004 18.0411 5.49993C17.2056 4.42982 16.1373 3.5641 14.9173 2.9685C13.6973 2.3729 12.3576 2.06306 11 2.0625ZM11 18.5625C9.67052 18.5634 8.36438 18.2133 7.21359 17.5476C7.12933 17.4987 7.03566 17.4683 6.93876 17.4584C6.84187 17.4485 6.74397 17.4592 6.65156 17.49L3.4375 18.5625L4.50914 15.3484C4.54003 15.2561 4.55095 15.1582 4.54117 15.0613C4.53139 14.9644 4.50114 14.8707 4.45242 14.7864C3.6188 13.3452 3.28411 11.6691 3.50026 10.0182C3.71641 8.36734 4.47132 6.83394 5.64789 5.65588C6.82445 4.47783 8.3569 3.72098 10.0075 3.50275C11.6581 3.28451 13.3346 3.61709 14.7769 4.44888C16.2192 5.28068 17.3467 6.5652 17.9844 8.10318C18.6222 9.64115 18.7346 11.3466 18.3042 12.955C17.8738 14.5634 16.9246 15.9847 15.604 16.9986C14.2833 18.0125 12.665 18.5622 11 18.5625Z"
+                                fill="#3C3C3C"
+                            />
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <!-- descripción -->
+                    <div class="description">
+                        <p>
+                            <span class="cat-name">Kagome</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum magni aliquam. Nulla minus repudiandae voluptatem eveniet exercitationem dignissimos similique, dolores.
+                        </p>
+                    </div>
+        
+                </div>
+        </div>
     </section>
-    <script src="./src/scripts/shortDescription.js"></script>
+
   </body>
 </html>
