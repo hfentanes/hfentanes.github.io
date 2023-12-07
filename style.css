@@ -175,52 +175,22 @@ button:hover {
 
   .hamburger-menu {
     display: block;
+    margin-right: 30px;
+    border-radius: 5px;
   }
-
-  .hamburger-menu {
-      margin-right: 30px;
+  
+    .hamburger-menu:hover {
+      background-color: #3b3e43;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 768px) {
-  .categorias {
-      display: none;
-  }
-
   .busqueda {
     display: none;
   }
 
-  .hamburger-menu {
-      display: block;
-  }
-
   nav {
-    padding: 0px;
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin-left: 30px;
-  }
-
-  .hamburger-menu {
-      margin-right: 30px;
-  }
-
-  .hamburger-menu {
-      background-color: #222529;
-      padding: 10px;
-      border-radius: 5px;
-  }
-
-  .hamburger-menu:hover {
-      background-color: #3b3e43;
-  }
-
-  .hamburger-menu img {
-      width: 30px;
-      height: 30px;
+    padding: 10px;
   }
 }
