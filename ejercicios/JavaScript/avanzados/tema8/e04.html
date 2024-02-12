@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04 del tema 08</title>
+</head>
+
+<body>
+
+    <div class="todo-list"></div>
+
+    <script>
+        //cojo datos de la API
+        async function obtenerDatosDeAPI() {
+            try {
+                const respuesta = await fetch("https://jsonplaceholder.typicode.com/todos");
+                const datos = await respuesta.json();
+                return datos;
+            } catch (error) {
+                console.error("Error al obtener los datos de la API:", error);
+            }
+        }
+
+        //renderizo los todos en lista
+        async function mostrarListaDeTareas() {
+            try {
+                const datos = await obtenerDatosDeAPI();
+                const contenedorLista = document.querySelector('.todo-list');
+
+                //itero los todos y los añado a la lista
+                datos.forEach(todo => {
+                    const item = document.createElement("li");
+                    item.textContent = todo.title;
+                    contenedorLista.appendChild(item);
+                });
+
+                console.log("Lista creada con éxito.");
+            } catch (error) {
+                console.error("Error al mostrar la lista de tareas:", error);
+            }
+        }
+
+        //llamo la función
+        mostrarListaDeTareas();
+    </script>
+</body>
+
+</html>
